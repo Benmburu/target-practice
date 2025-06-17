@@ -87,7 +87,7 @@ export default function Dashboard() {
       title: 'View Rankings',
       description: 'Check current leaderboard',
       icon: Trophy,
-      href: '/rankings',
+      href: '/rankings/overall',
       color: 'purple',
       primary: false
     },
