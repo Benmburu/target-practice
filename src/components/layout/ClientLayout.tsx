@@ -446,7 +446,7 @@ export default function ClientLayout({
         )}
 
         {/* Navigation - Takes up most space (about 70%) */}
-        <nav className="flex-1 py-4 overflow-y-auto">
+        <nav className="flex-1 py-4 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
           <div className="space-y-1">
             {navigationItems.map(item => (
               <NavItem
