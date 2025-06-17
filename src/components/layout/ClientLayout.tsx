@@ -93,7 +93,7 @@ const navigationItems: NavItem[] = [
         id: 'performance',
         label: 'Performance',
         icon: <TrendingUp className="w-4 h-4" />,
-        href: '/analytics/performance'
+        href: '/analytics'
       },
       {
         id: 'reports',
