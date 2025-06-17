@@ -21,21 +21,23 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { useDarkMode } from '@/contexts/DarkModeContext';
 
 export default function Dashboard() {
   const [currentTime, setCurrentTime] = useState(new Date());
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { darkMode } = useDarkMode();
+  const isDarkMode = darkMode;
 
   useEffect(() => {
     const timer = setInterval(() => setCurrentTime(new Date()), 1000);
     return () => clearInterval(timer);
   }, []);
 
-  useEffect(() => {
-    // Check if dark mode is enabled (you might want to sync this with your ClientLayout)
-    const darkMode = document.documentElement.classList.contains('dark');
-    setIsDarkMode(darkMode);
-  }, []);
+  // useEffect(() => {
+  //   // Check if dark mode is enabled (you might want to sync this with your ClientLayout)
+  //   const darkMode = document.documentElement.classList.contains('dark');
+  //   setIsDarkMode(darkMode);
+  // }, []);
 
   const stats = [
     {

@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useDarkMode } from '@/contexts/DarkModeContext';
 
 interface NavItem {
   id: string;
@@ -248,7 +249,8 @@ export default function ClientLayout({
 }) {
   const pathname = usePathname();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
+  const { darkMode, toggleDarkMode } = useDarkMode();
   const [isMobile, setIsMobile] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set(['shooting']));
@@ -370,7 +372,7 @@ export default function ClientLayout({
         {(!sidebarCollapsed || isMobile) && (
           <div className="p-3 flex-shrink-0">
             <button
-              onClick={() => setDarkMode(!darkMode)}
+              onClick={() => toggleDarkMode()}
               className={`w-full flex items-center justify-center space-x-2 py-2 px-3 rounded-lg transition-colors text-sm ${
                 darkMode ? 'bg-slate-700 hover:bg-slate-600' : 'bg-gray-100 hover:bg-gray-200'
               }`}
@@ -387,7 +389,7 @@ export default function ClientLayout({
         {sidebarCollapsed && !isMobile && (
           <div className="p-2 flex-shrink-0">
             <button
-              onClick={() => setDarkMode(!darkMode)}
+              onClick={() => toggleDarkMode()}
               className={`w-full flex items-center justify-center py-2 px-2 rounded-lg transition-colors ${
                 darkMode ? 'bg-slate-700 hover:bg-slate-600' : 'bg-gray-100 hover:bg-gray-200'
               } group relative`}
