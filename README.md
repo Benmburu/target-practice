@@ -14,7 +14,7 @@ A comprehensive web application for managing shooting range operations, tracking
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Benmburu/target-practice.git
    cd target-practice
    ```
 
