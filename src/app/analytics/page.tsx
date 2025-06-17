@@ -5,7 +5,7 @@ export default function AnalyticsPage() {
     <ComingSoon
       title="Analytics Dashboard"
       description="Get comprehensive insights into shooting performance, trends, and statistics with our advanced analytics platform."
-      expectedDate="March 2025"
+      expectedDate="June 2025"
       priority="high"
       features={[
         "Performance trend analysis",

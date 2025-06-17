@@ -5,7 +5,7 @@ export default function ProfilePage() {
     <ComingSoon
       title="User Profile"
       description="Manage your personal information, preferences, and shooting statistics in one centralized location."
-      expectedDate="March 2025"
+      expectedDate="June 2025"
       priority="medium"
       features={[
         "Personal information management",

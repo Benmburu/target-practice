@@ -5,7 +5,7 @@ export default function ReportsPage() {
     <ComingSoon
       title="Custom Reports"
       description="Generate detailed reports tailored to your specific needs with advanced filtering and customization options."
-      expectedDate="April 2025"
+      expectedDate="June 2025"
       priority="medium"
       backUrl="/analytics"
       features={[

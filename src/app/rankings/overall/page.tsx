@@ -5,7 +5,7 @@ export default function OverallRankingsPage() {
     <ComingSoon
       title="Overall Rankings"
       description="View comprehensive all-time rankings across all shooting disciplines and categories with detailed performance metrics."
-      expectedDate="May 2025"
+      expectedDate="June 2025"
       priority="medium"
       backUrl="/rankings"
       features={[

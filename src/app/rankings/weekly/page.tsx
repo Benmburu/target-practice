@@ -5,7 +5,7 @@ export default function WeeklyRankingsPage() {
     <ComingSoon
       title="Weekly Rankings"
       description="Stay competitive with dynamic weekly leaderboards that reset every week, showcasing the most active and skilled shooters."
-      expectedDate="April 2025"
+      expectedDate="June 2025"
       priority="high"
       backUrl="/rankings"
       features={[

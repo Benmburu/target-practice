@@ -5,7 +5,7 @@ export default function RegisterPage() {
     <ComingSoon
       title="User Registration"
       description="Create new user accounts with comprehensive onboarding and verification processes."
-      expectedDate="January 2025"
+      expectedDate="June 2025"
       priority="high"
       backUrl="/"
       showNotifyButton={false}

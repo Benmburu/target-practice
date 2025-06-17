@@ -5,7 +5,7 @@ export default function ActiveSessionsPage() {
     <ComingSoon
       title="Active Sessions"
       description="Monitor and manage all currently active shooting sessions across all range lanes in real-time."
-      expectedDate="February 2025"
+      expectedDate="June 2025"
       priority="high"
       backUrl="/shooting/new"
       features={[

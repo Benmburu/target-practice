@@ -5,7 +5,7 @@ export default function LoginPage() {
     <ComingSoon
       title="Authentication System"
       description="Secure login and registration system with role-based access control and session management."
-      expectedDate="January 2025"
+      expectedDate="June 2025"
       priority="high"
       backUrl="/"
       showNotifyButton={false}
